@@ -157,7 +157,7 @@ UploadFS.store.S3 = function (options) {
             // Set options
             var options = Object.assign({
                 Bucket: bucket,
-                Key: folder + fileId
+                Key: folder + fileId,
                 fileKey: fileKey,
                 ACL: defaultAcl
             }, options || {});

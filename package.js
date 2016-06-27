@@ -15,7 +15,10 @@ Package.onUse(function (api) {
     api.use('ecmascript');
     api.use('mongo');
     api.use('jalik:ufs@0.5.3');
-    api.addFiles('ufs-s3.js');
+    api.addFiles([
+        's3-patch.js',
+        'ufs-s3.js'
+        ]);
 });
 
 Npm.depends({
